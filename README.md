@@ -1,5 +1,7 @@
 # My Personal Production Platform
 
+Author: Carl Foerster
+
 This repository contains my personal production platform, a full-stack portfolio application that will be developed and operated throughout the senior capstone.
 
 ## Current Status
