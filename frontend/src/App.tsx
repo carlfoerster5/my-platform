@@ -16,6 +16,12 @@ function App() {
     kind: 'bug',
   }
 
+  const initialReports: Report[] = [
+    { id: '1', text: 'Navigation link is broken', kind: 'bug' },
+    { id: '2', text: 'Add dark mode', kind: 'feature' },
+    { id: '3', text: 'Something is broken', kind: 'bug'}
+  ]
+
 
 
   return (
@@ -36,10 +42,14 @@ function App() {
         <p>{sampleReport.text} ({sampleReport.kind})</p>
       </section>
 
-
-
-
-
+      <ul>
+        {initialReports.map((report) => (
+        <li key={report.id}>
+          {report.text} ({report.kind})
+        </li>
+          ))}
+      </ul>
+      
     </main>
   )
 }
